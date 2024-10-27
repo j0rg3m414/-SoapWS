@@ -23,8 +23,8 @@ _ Transações: O protocolo suporta transações complexas e pode ser usado em c
 - Segurança: Suporte a padrões de segurança robustos.
 - Transações: Suporte a transações complexas.
 - Estrutura Rigorosa: A definição do WSDL (Web Services Description Language) fornece um contrato claro sobre como o serviço deve se comportar.
-<br />
-###Contras:
+
+### Contras:
 - Complexidade: A configuração e o uso de SOAP podem ser mais complexos em comparação com REST.
 - Desempenho: O uso de XML pode resultar em maior sobrecarga de dados em comparação com formatos mais leves, como JSON.
 - Menos Flexível: Alterações no serviço podem exigir atualizações significativas no cliente.
