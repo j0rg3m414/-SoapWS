@@ -11,15 +11,15 @@ Spring boot, Spring web Service, Spring boot starter, Maven.
 SOAP (Simple Object Access Protocol) é um protocolo de comunicação que permite a troca de informações estruturadas em uma rede. Ele é baseado em XML e é frequentemente usado em serviços web. SOAP define um conjunto de regras para a formatação de mensagens e é independente de plataforma e linguagem de programação.
 
 ## Principais Características do SOAP
-### Protocolo Baseado em XML: As mensagens SOAP são formatadas em XML, o que proporciona uma estrutura padronizada e fácil de entender.
+- Protocolo Baseado em XML: As mensagens SOAP são formatadas em XML, o que proporciona uma estrutura padronizada e fácil de entender.
 <br />
-### Independência de Plataforma: SOAP pode ser usado em qualquer plataforma que suporte XML, tornando-o altamente interoperável.
+- Independência de Plataforma: SOAP pode ser usado em qualquer plataforma que suporte XML, tornando-o altamente interoperável.
 <br />
-### Extensibilidade: SOAP é projetado para ser extensível, permitindo a adição de novas funcionalidades sem quebrar a compatibilidade com versões anteriores.
+- Extensibilidade: SOAP é projetado para ser extensível, permitindo a adição de novas funcionalidades sem quebrar a compatibilidade com versões anteriores.
 <br />
-### Segurança: SOAP pode ser integrado com WS-Security, que fornece mecanismos para autenticação e criptografia.
+- Segurança: SOAP pode ser integrado com WS-Security, que fornece mecanismos para autenticação e criptografia.
 <br />
-### Transações: O protocolo suporta transações complexas e pode ser usado em cenários de negócios onde a confiabilidade é crucial.
+_ Transações: O protocolo suporta transações complexas e pode ser usado em cenários de negócios onde a confiabilidade é crucial.
 <br >
 
 ## Prós e Contras do SOAP
