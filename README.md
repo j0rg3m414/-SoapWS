@@ -12,15 +12,10 @@ SOAP (Simple Object Access Protocol) é um protocolo de comunicação que permit
 
 ## Principais Características do SOAP
 - Protocolo Baseado em XML: As mensagens SOAP são formatadas em XML, o que proporciona uma estrutura padronizada e fácil de entender.
-<br />
 - Independência de Plataforma: SOAP pode ser usado em qualquer plataforma que suporte XML, tornando-o altamente interoperável.
-<br />
 - Extensibilidade: SOAP é projetado para ser extensível, permitindo a adição de novas funcionalidades sem quebrar a compatibilidade com versões anteriores.
-<br />
 - Segurança: SOAP pode ser integrado com WS-Security, que fornece mecanismos para autenticação e criptografia.
-<br />
 _ Transações: O protocolo suporta transações complexas e pode ser usado em cenários de negócios onde a confiabilidade é crucial.
-<br >
 
 ## Prós e Contras do SOAP
 ### Prós:
