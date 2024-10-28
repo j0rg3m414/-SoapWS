@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="http://example.com/soap"
+                  targetNamespace="http://example.com/soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <wsdl:service name="ProductService">
+        <wsdl:port name="ProductPort" binding="tns:ProductBinding">
+            <soap:address location="http://localhost:8080/ws"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:portType name="ProductPort">
+        <wsdl:operation name="getProduct">
+            <wsdl:input message="tns:getProductRequest"/>
+            <wsdl:output message="tns:getProductResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="ProductBinding" type="tns:ProductPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getProduct">
+            <soap:operation soapAction=""/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:message name="getProductRequest">
+        <wsdl:part name="parameters" element="tns:getProductRequest"/>
+    </wsdl:message>
+
+    <wsdl:message name="getProductResponse">
+        <wsdl:part name="parameters" element="tns:getProductResponse"/>
+    </wsdl:message>
+
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                    targetNamespace="http://example.com/soap"
+                    xmlns:tns="http://example.com/soap"
+                    elementFormDefault="qualified">
+
+            <xsd:element name="getProductRequest">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="id" type="xsd:long"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="getProductResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="product" type="tns:productType"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:complexType name="productType">
+                <xsd:sequence>
+                    <xsd:element name="id" type="xsd:long"/>
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="price" type="xsd:double"/>
+                </xsd:sequence>
+            </xsd:complexType>
+
+        </xsd:schema>
+    </wsdl:types>
+
+</wsdl:definitions>
